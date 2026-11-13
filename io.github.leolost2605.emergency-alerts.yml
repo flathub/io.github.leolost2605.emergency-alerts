@@ -60,20 +60,6 @@ modules:
         tag: 7.6.0
         commit: 065ba1f245b60ef867a6ca145e0891cf84eddcc7
 
-  - name: libportal
-    buildsystem: meson
-    config-opts:
-      - -Dbackend-gtk3=disabled
-      - -Dbackend-qt5=disabled
-      - -Dbackend-qt6=disabled
-      - -Ddocs=false
-      - -Dtests=false
-    sources:
-      - type: git
-        url: https://github.com/flatpak/libportal.git
-        tag: 0.9.1
-        commit: 8f5dc8d192f6e31dafe69e35219e3b707bde71ce
-
   - name: libshumate
     buildsystem: meson
     config-opts:
